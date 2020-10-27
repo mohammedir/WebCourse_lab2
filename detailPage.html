@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music world</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="Css.css">
+
+<style>
+
+/* Change color on hover */
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+
+/* Contain image div */
+.imgDiv {
+flex: 50%;
+background-color: #f1f1f1;
+padding: 20px;
+}
+
+/* Contain image content */
+.imgcontent {
+flex: 50%;
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+font-family: ui-sans-serif;
+font-size: 30px;
+
+}
+/*div within imgcontent div */
+.innerDiv{
+padding: 20px;
+border:1px solid;
+border-color:grey;
+height:500px;
+}
+
+/*class for buy CD button on bootom of page */
+.buyDiv{
+display: flex;
+flex-wrap: wrap;
+flex: 100%;
+padding: 20px;
+padding-left: 45%;
+}
+
+/*buy CD button css */
+button{
+background-color:#008000b3;
+color:white;
+height:40px;
+width:120px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-simple-fashion-music-gradient-background-image_204000.jpg");
+width: 100%;
+padding: 20px;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+}
+
+button{
+float:right;
+height:40px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {
+flex-direction: column;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width:100%;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Links here to go to list page , where CD's collection will present -->
+<div class="navbar">
+<a href="CDlistPage.html">Hindi music CD</a> <!-- link to list page -->
+<a href="CDlistPage.html">English music CD</a> <!-- link to list page -->
+<a href="CDlistPage.html">Marathi music CD</a> <!-- link to list page -->
+<a href="index.html" class="right">Home Page</a> <!-- link to home page -->
+</div>
+
+<!-- Put images in each div below respect to its categories -->
+<div class="row">
+<div class="imgDiv">
+<div class="fakeimg" style="height:500px;">Music1</div>
+</div>
+<div class="imgcontent">
+<div class="innerDiv">
+<label>Music name</label></br></br>
+<label>Lyrics writer: </label><span> John methew</span></br></br>
+<label>Song movie: </label><span> New movie</span></br></br>
+<label>Playback singer: </label><span> Teena </span></br></br>
+<label>Song length: </label><span> 4 minutes </span></br></br>
+<label>Market Price: </label><span> 400 $ </span></br></br>
+
+</div>
+</div>
+</div>
+
+<div class="buyDiv">
+<button>Buy CD</button>
+</div>
+
+<div class="footer">
+<h2>MyCDWebsite&copy;music</h2>
+</div>
+
+</body>
+</html>
